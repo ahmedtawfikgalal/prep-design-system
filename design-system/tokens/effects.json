@@ -1,0 +1,14 @@
+{
+  "radius": {
+    "sm": { "value": "4px" },
+    "md": { "value": "8px" }
+  },
+  "shadow": {
+    "md": { "value": "0 4px 12px rgba(0, 0, 0, 0.15)" },
+    "lg": { "value": "0 10px 25px rgba(0, 0, 0, 0.2)" }
+  },
+  "zIndex": {
+    "modal": { "value": "1000" },
+    "toast": { "value": "1100" }
+  }
+}
