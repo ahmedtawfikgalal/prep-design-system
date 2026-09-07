@@ -1,27 +1,26 @@
-import { colors } from '../../tokens/colors';
-import { spacing } from '../../tokens/spacing';
+import './Button.css';
 
 type ButtonProps = {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary';
   onClick?: () => void;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 };
 
-export const Button = ({ children, variant = 'primary', onClick }: ButtonProps) => {
-  const backgroundColor = variant === 'primary' ? colors.primary : colors.secondary;
-  const textColor = variant === 'primary' ? colors.textOnPrimary : colors.textOnSecondary;
-
+export const Button = ({
+  children,
+  variant = 'primary',
+  onClick,
+  disabled = false,
+  type = 'button',
+}: ButtonProps) => {
   return (
     <button
+      type={type}
       onClick={onClick}
-      style={{
-        backgroundColor,
-        color: textColor,
-        padding: `${spacing.sm} ${spacing.md}`,
-        border: 'none',
-        borderRadius: '4px',
-        cursor: 'pointer',
-      }}
+      disabled={disabled}
+      className={`button button--${variant}`}
     >
       {children}
     </button>

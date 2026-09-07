@@ -23,12 +23,28 @@ test('renders as a button element', () => {
 test('defaults to primary variant when none is passed', () => {
   render(<Button>Click me</Button>);
   const button = screen.getByRole('button');
-  // primary variant should use the primary background color from tokens
-  expect(button).toHaveStyle({ backgroundColor: '#0066CC' });
+  expect(button).toHaveClass('button--primary');
 });
 
 test('applies secondary variant styling when specified', () => {
   render(<Button variant="secondary">Click me</Button>);
   const button = screen.getByRole('button');
-  expect(button).toHaveStyle({ backgroundColor: '#6C757D' });
+  expect(button).toHaveClass('button--secondary');
+});
+
+test('is disabled when disabled prop is true', () => {
+  render(<Button disabled>Click me</Button>);
+  expect(screen.getByRole('button')).toBeDisabled();
+});
+
+test('does not call onClick when disabled', () => {
+  const handleClick = vi.fn();
+  render(<Button onClick={handleClick} disabled>Click me</Button>);
+  fireEvent.click(screen.getByRole('button'));
+  expect(handleClick).not.toHaveBeenCalled();
+});
+
+test('defaults to type="button" to avoid accidental form submission', () => {
+  render(<Button>Click me</Button>);
+  expect(screen.getByRole('button')).toHaveAttribute('type', 'button');
 });
