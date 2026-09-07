@@ -11,7 +11,8 @@
     "test": "vitest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "tokens:build": "node style-dictionary.config.mjs"
+    "tokens:build": "node style-dictionary.config.mjs",
+    "size": "size-limit"
   },
   "dependencies": {
     "react": "^19.2.8",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "latest",
     "@eslint/js": "^10.0.1",
+    "@size-limit/preset-small-lib": "^13.0.3",
     "@storybook/addon-a11y": "^10.6.0",
     "@storybook/addon-docs": "^10.6.0",
     "@storybook/addon-mcp": "^10.6.0",
@@ -40,6 +42,7 @@
     "globals": "^17.11.0",
     "jsdom": "^29.1.1",
     "playwright": "latest",
+    "size-limit": "^13.0.3",
     "storybook": "^10.6.0",
     "style-dictionary": "^5.5.3",
     "typescript": "~6.0.2",

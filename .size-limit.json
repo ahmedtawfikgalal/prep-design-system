@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Button",
+    "path": "src/components/Button/Button.tsx",
+    "limit": "1 KB"
+  },
+  {
+    "name": "Input",
+    "path": "src/components/Input/Input.tsx",
+    "limit": "1 KB"
+  },
+  {
+    "name": "Modal",
+    "path": "src/components/Modal/Modal.tsx",
+    "limit": "6 KB"
+  },
+  {
+    "name": "Toast",
+    "path": "src/components/Toast/Toast.tsx",
+    "limit": "6 KB"
+  },
+  {
+    "name": "DataTable",
+    "path": "src/components/DataTable/DataTable.tsx",
+    "limit": "1 KB"
+  },
+  {
+    "name": "FormField",
+    "path": "src/components/FormField/FormField.tsx",
+    "limit": "6 KB"
+  }
+]
