@@ -1,0 +1,11 @@
+{
+  "color": {
+    "primary": { "value": "#0066CC" },
+    "primaryHover": { "value": "#0052A3" },
+    "secondary": { "value": "#6C757D" },
+    "secondaryHover": { "value": "#565E64" },
+    "danger": { "value": "#DC3545" },
+    "textOnPrimary": { "value": "#FFFFFF" },
+    "textOnSecondary": { "value": "#FFFFFF" }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "font": {
+    "family": { "value": "system-ui, sans-serif" },
+    "sizeSm": { "value": "14px" },
+    "sizeMd": { "value": "16px" },
+    "sizeLg": { "value": "18px" },
+    "weightNormal": { "value": "400" },
+    "weightBold": { "value": "600" }
+  }
+}
